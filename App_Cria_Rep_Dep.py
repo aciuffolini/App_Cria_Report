@@ -2,6 +2,9 @@ import os
 import io
 import streamlit as st
 import pandas as pd
+import matplotlib
+matplotlib.use("Agg")  # Set the backend to "Agg" (non-interactive) for Streamlit
+import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 from docx import Document
 from docx.shared import Inches, RGBColor
