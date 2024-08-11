@@ -2,7 +2,6 @@ import os
 import io
 import streamlit as st
 import pandas as pd
-matplotlib.use("Agg")  # Set the backend to "Agg" (non-interactive) for Streamlit
 import matplotlib
 import matplotlib.pyplot as plt
 from docx import Document
