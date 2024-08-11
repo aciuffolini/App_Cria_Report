@@ -149,7 +149,8 @@ def prepare_download_button(summary_report):
 # Streamlit app logic
 def main():
     st.title("Calving Summary Report Generator")
-    api_key = st.text_input("Enter OpenAI API Key (optional, for GPT-4)")
+    #api_key = st.text_input("Enter OpenAI API Key (optional, for GPT-4)")
+    api_key = st.text_input("Enter OpenAI API Key")
     uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
 
     if uploaded_file:
