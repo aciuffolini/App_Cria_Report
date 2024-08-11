@@ -14,7 +14,7 @@ from langchain.llms import OpenAI
 # Function to select LLM based on user input
 def select_llm(api_key):
     if api_key:
-        llm = OpenAI(temperature=0, model="gpt-4", openai_api_key=api_key)
+        llm = OpenAI(temperature=0, model="gpt-4o", openai_api_key=api_key)
     else:
         llm = Ollama(model="llama3.1")
     return llm
