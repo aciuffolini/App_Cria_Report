@@ -5,3 +5,8 @@ python-docx
 langchain
 langchain-community
 openpyxl
+openai
+langchain
+langchain-core
+pydantic
+
