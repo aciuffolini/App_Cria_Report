@@ -1,6 +1,6 @@
 streamlit
 pandas
-matplotlib.pyplot
+matplotlib
 python-docx
 langchain
 langchain-community
