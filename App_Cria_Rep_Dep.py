@@ -8,7 +8,7 @@ from docx import Document
 from docx.shared import Inches, RGBColor
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
-from langchain_community.llms import Ollama
+from langchain_community.llms import OllamaLLM
 from langchain.llms import OpenAI
 
 # Function to select LLM based on user input
@@ -16,7 +16,7 @@ def select_llm(api_key):
     if api_key:
         llm = OpenAI(temperature=0, model="gpt-4o", openai_api_key=api_key)
     else:
-        llm = Ollama(model="llama3.1")
+        llm = OllamaLLM(model="llama3.1")
     return llm
 
 # Function to calculate ratios
