@@ -11,10 +11,10 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 #from langchain_community.llms import OllamaLLM
 #from langchain_ollama.llms import OllamaLLM
-#from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.llms import ChatOpenAI
 from langchain_ollama import ChatOllama
-from langchain.llms import OpenAI
+
 
 # Function to select LLM based on user input
 def select_llm(api_key):
