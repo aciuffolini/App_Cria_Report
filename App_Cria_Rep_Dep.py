@@ -1,5 +1,6 @@
 import os
 import io
+import openai
 import streamlit as st
 import pandas as pd
 import matplotlib
@@ -10,13 +11,14 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 #from langchain_community.llms import OllamaLLM
 #from langchain_ollama.llms import OllamaLLM
+from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 from langchain.llms import OpenAI
 
 # Function to select LLM based on user input
 def select_llm(api_key):
     if api_key:
-        llm = OpenAI(temperature=0, model="gpt-4o", openai_api_key=api_key)
+        llm = ChatOpenAI(temperature=0, model="gpt-4o-mini", openai_api_key=api_key)
     else:
         #llm = OllamaLLM(model="llama3.1")
         llm = ChatOllama(model = "llama3.1:70b",temperature = 0)
