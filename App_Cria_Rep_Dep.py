@@ -12,7 +12,7 @@ from langchain.chains import LLMChain
 #from langchain_community.llms import OllamaLLM
 #from langchain_ollama.llms import OllamaLLM
 from langchain_openai import ChatOpenAI
-from langchain_ollama import ChatOllama
+#from langchain_ollama import ChatOllama
 
 
 # Function to select LLM based on user input
