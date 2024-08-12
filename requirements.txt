@@ -8,5 +8,6 @@ openpyxl
 openai
 langchain
 langchain-core
+langchain-openai
 pydantic
 
