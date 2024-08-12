@@ -174,7 +174,7 @@ def main():
         st.write("Generated Comments:", comments)
 
         if st.button("Generate Report"):
-            logo_path = load_logo("logo.png")
+            logo_path = load_logo("insight-29[53].png")
             if logo_path:
                 summary_report = generate_summary_report(ratios, comments, logo_path)
                 prepare_download_button(summary_report)
